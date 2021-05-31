@@ -22,14 +22,14 @@ var lastName = ['Bianchi','Neri','Rossi','Verdi','Gialli'];
 
 var myLastName = prompt('Inserisci il tuo cognome');
 
-var myLastNameCapitalized = myLastName.charAt(0).toUpperCase() + myLastName.slice(1)
+var myLastNameCapitalized = myLastName.charAt(0).toUpperCase() + myLastName.slice(1);
 
 lastName.push(myLastNameCapitalized);
 
 lastName.sort();
 
 for(var i = 0; i < lastName.length; i++ ){
-    console.log( (i +1) + '.' + lastName[i])
+    console.log((i +1) + '.' + lastName[i]);
 }
 
-document.getElementById('lastname-list').innerHTML = lastName
+document.getElementById('lastname-list').innerHTML = lastName;
