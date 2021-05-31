@@ -2,16 +2,16 @@
 1. Chiedi all’utente la sua email,
 2. Controlla che sia nella lista di chi può accedere, quindi stampa un messaggio appropriato sull’esito del controllo.*/
 
-// var acceptedEmails = [ 'piero@gmail.com', 'pluto@gmail.com', 'pippo@gmail.com', 'topolino@gmail.com', 'paperino@gmail.com'];
+var acceptedEmails = [ 'piero@gmail.com', 'pluto@gmail.com', 'pippo@gmail.com', 'topolino@gmail.com', 'paperino@gmail.com'];
 
-// var nuovaEmail = prompt('Inserisci il tuo indirizzo mail');
+var nuovaEmail = prompt('Inserisci il tuo indirizzo mail');
 
-// if (acceptedEmails.includes(nuovaEmail)) {
-//     document.getElementById('mail-massage').innerHTML = 'Il tuo indirizzo mail è già presente nella lista' ;
-// } else {
-//     document.getElementById('mail-massage').innerHTML = 'Il tuo indirizzo mail è stato aggiunto correttamente alla lista' ;
+if (acceptedEmails.includes(nuovaEmail)) {
+    document.getElementById('mail-massage').innerHTML = 'Il tuo indirizzo mail è già presente nella lista' ;
+} else {
+    document.getElementById('mail-massage').innerHTML = 'Il tuo indirizzo mail è stato aggiunto correttamente alla lista' ;
     
-// }
+}
 
 
 /* Lista Cognomi:
@@ -32,3 +32,4 @@ for(var i = 0; i < lastName.length; i++ ){
     console.log( (i +1) + '.' + lastName[i])
 }
 
+document.getElementById('lastname-list').innerHTML = lastName
