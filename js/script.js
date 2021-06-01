@@ -13,6 +13,44 @@ if (acceptedEmails.includes(nuovaEmail)) {
     
 }
 
+// ----------Soluzione con FOR-----------//
+
+// var trovato = false
+
+// for(var i= 0; i < acceptedEmails.length; i++){
+//     if(nuovaEmail == acceptedEmails[i]){
+//         trovato = true;
+//     }
+// }
+
+// if (trovato == true) {
+//     console.log('email trovata');
+// } else {
+//     console.log('email  non-trovata');
+// }
+
+
+// ----------Soluzione con WHILE-----------//
+
+// var trovato = false
+
+// var i= 0;
+
+// while( i < acceptedEmails.length){
+//    if(nuovaEmail == acceptedEmails[i]){
+//        trovato = true;
+//    }
+//    i++
+// }
+
+
+// if (trovato == true) {
+//     console.log('email trovata');
+// } else {
+//     console.log('email  non-trovata');
+// }
+
+
 
 /* Lista Cognomi:
 1. Chiedi all’utente il cognome ed inseriscilo in un array con altri cognomi: ‘Bianchi’, ‘Neri’, ‘Rossi’, ‘Verdi’, ‘Gialli’
@@ -22,9 +60,9 @@ var lastName = ['Bianchi','Neri','Rossi','Verdi','Gialli'];
 
 var myLastName = prompt('Inserisci il tuo cognome');
 
-var myLastNameCapitalized = myLastName.charAt(0).toUpperCase() + myLastName.slice(1);
+myLastName = myLastName.charAt(0).toUpperCase() + myLastName.slice(1).toLowerCase();
 
-lastName.push(myLastNameCapitalized);
+lastName.push(myLastName);
 
 lastName.sort();
 
