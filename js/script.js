@@ -67,7 +67,5 @@ lastName.push(myLastName);
 lastName.sort();
 
 for(var i = 0; i < lastName.length; i++ ){
-    console.log((i +1) + '.' + lastName[i]);
+    document.getElementById('lastname-list').innerHTML += (i +1) + '.' + lastName[i] + '<br>';
 }
-
-document.getElementById('lastname-list').innerHTML = lastName;
